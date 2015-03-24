@@ -157,6 +157,84 @@ and (max-width: 768px) {
 	/*width: 100%;*/
 }
 
+/***** Page -- Testimonials **********/
+
+#testimonials {
+	padding: 0;
+}
+
+#testimonials h2 {
+	display: none;
+}
+
+#testimonials blockquote {
+	margin: 0;
+	border-left: none;
+	min-height: 500px;
+	position: relative;
+	padding: 0;
+}
+
+#testimonials blockquote .quote {
+	background-color: rgba(255,255,255, .6);
+	padding: 20px 5%;
+	position: absolute;
+	bottom: 0;
+	width: 75%;
+	font-weight: 400;
+	border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+	background-color: rgba(239,240,196, .9);
+}
+
+#testimonials #john {
+	background: url("assets/testimonial-1.jpeg") no-repeat center;
+}
+
+#testimonials #sarah {
+	background: url("assets/testimonial-2.jpeg") no-repeat center;
+}
+
+#testimonials #debbie {
+	background: url("assets/testimonial-3.jpeg") no-repeat center;
+}
+
+#testimonials #kenny {
+	background: url("assets/testimonial-4.jpeg") no-repeat center;
+}
+
+#testimonials .quote .more, #testimonials .quote .customer {
+	opacity: 0;
+	font-size: 0;
+/*	line-height: 0;*/
+/*	padding-top: 10px;*/
+}
+
+#testimonials .quote:hover .more {
+	font-family: "Open Sans", sans-serif;
+	font-size: .8em;
+	opacity: 1;
+	font-weight: 100;
+	display: block;
+}
+
+#testimonials .quote:hover .customer {
+	opacity: 1;
+	font-size: .7em;
+	display: block;
+	text-align: right;
+}
+
+#testimonials .quote .intro:after {
+	content: '...';
+}
+
+#testimonials .quote:hover .intro:after {
+	content: '';
+}
+
 /***** Footer Navigation **********/
  footer .navbar-default {
  	background: transparent;
